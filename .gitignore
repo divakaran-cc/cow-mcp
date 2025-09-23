@@ -12,3 +12,5 @@ cowmcpservice.egg-info
 
 # Environments
 .venv
+main.py
+.gitignore
