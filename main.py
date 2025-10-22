@@ -66,6 +66,6 @@ if __name__ == "__main__":
     else:
         mcp.settings.host = "0.0.0.0"
         mcp.settings.port = portInInt
-        mcp.settings.auth = AuthSettings(issuer_url=host)
-        mcp._auth_server_provider = CCowOAuthProvider()
+        # mcp.settings.auth = AuthSettings(issuer_url=host)
+        # mcp._auth_server_provider = CCowOAuthProvider()
         mcp.run(transport='sse')
