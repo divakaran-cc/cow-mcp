@@ -14,7 +14,7 @@ else:
     basic_auth_flow = True
     headers = {"Authorization": "Basic " + base64.b64encode((cid + ":" + cs).encode("ascii")).decode("ascii")}
 
-host = os.environ.get("CCOW_HOST", "http://cowapiservice:9080")
+host = os.environ.get("CCOW_HOST", "http://cowapiservice:80")
 
 ENABLE_CONTEXTUAL_VECTOR_SEARCH = os.environ.get("ENABLE_CONTEXTUAL_VECTOR_SEARCH", "false").lower() == "true"
 
