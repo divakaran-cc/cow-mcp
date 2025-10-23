@@ -87,11 +87,7 @@ URL_FETCH_FILE_BY_HASH = "/url-hash/download"
 
 # RULES
 MCP_GET_RULES_TAG = "MCP"
-URL_FETCH_RULES = "/v5/partner/pc/rules"
-
-if not ENABLE_CCOW_API_TOOLS:
-    URL_FETCH_RULES = "/pc-api/v1/rules"
-
+URL_FETCH_RULES = "/pc-api/v1/rules"
 URL_FETCH_TASKS = "/pc-api/v1/tasks"
 URL_CREATE_RULE = "/pc-api/v2/rules"
 URL_EXECUTE_RULE = "/pc-api/v2/rules/execute-rule"
