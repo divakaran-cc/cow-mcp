@@ -3525,16 +3525,16 @@ def execute_rule(rule_name: str, from_date: str, to_date:str, rule_inputs: List[
 
         for application in applications:
             is_valid, result = False,{}
-            apllication_id = application.get("applicationId", None)
+            application_id = application.get("applicationId", None)
             logger.debug("applictcation id: {}\n".format(application))
 
-            if apllication_id:
-                if not is_valid_uuid(apllication_id):
-                    return {"success": False, "error": f'The provided application ID: {apllication_id} is not valid. Please try again with a valid application ID.'}
+            if application_id:
+                if not is_valid_uuid(application_id):
+                    return {"success": False, "error": f'The provided application ID: {application_id} is not valid. Please try again with a valid application ID.'}
                 
                 headers = wsutils.create_header()
                 params = {
-                    "id": application.get("applicationId", None),
+                    "id": application_id,
                     "validated": True
                 }
 
